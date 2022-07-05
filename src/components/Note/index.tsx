@@ -42,6 +42,7 @@ const Note = ({ note }: { note: Note }) => {
       <Styled.NoteHeader>
         {allowEdit ? (
           <Styled.EditInput
+            defaultValue={note.title}
             autoFocus
             maxLength={100}
             {...register('title', { required: true })}
@@ -55,6 +56,7 @@ const Note = ({ note }: { note: Note }) => {
       {allowEdit ? (
         <>
           <Styled.EditTextArea
+            defaultValue={note.description}
             maxLength={155}
             {...register('description', { required: true })}
             name="description"
