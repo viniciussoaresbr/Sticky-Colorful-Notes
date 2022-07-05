@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+<h1 align="center">Sticky Colorful Notes</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://user-images.githubusercontent.com/85377319/176077277-04888a32-4d85-491a-a25b-e7337ca8499b.png" />
+<img src="https://user-images.githubusercontent.com/85377319/176085474-749656fa-cacb-409e-b299-3f0b477d5b46.png" />
 
-## Available Scripts
+<h2>Instruções para rodar o projeto em sua máquina</h2>
 
-In the project directory, you can run:
+Verifique se o `node.js v14+` está instalado.
 
-### `yarn start`
+<h3>Front-end :</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone o repositório sticky-colorful-notes :
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+git clone https://github.com/viniciussoaresbr/sticky-colorful-notes.git
+```
 
-### `yarn test`
+Instale as dependências utilizando yarn ou npm :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm i || yarn
+```
 
-### `yarn build`
+Crie um arquivo .env na pasta raiz do projeto com a variável de ambiente :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+REACT_APP_BASE_URL=http://localhost:3001
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Logo após instalar as dependências inicie o projeto :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start || yarn start
+```
 
-### `yarn eject`
+<h3>Back-end :</h3>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Clone o repositório scn-api :
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+git clone https://github.com/viniciussoaresbr/scn-api.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Instale as dependências utilizando o npm :
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm i
+```
 
-## Learn More
+Instale o MongoDB na sua máquina local :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://www.mongodb.com/try/download/community
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Instale o NoSqlBooster para acessar e gerenciar o banco local :
+
+https://nosqlbooster.com/downloads
+
+Crie uma conexão no NoSqlBooster :
+
+<img src="https://user-images.githubusercontent.com/85377319/176083757-0428970b-8216-46ce-8208-81fe9bcdeee5.png" />
+
+Utilize o atalho Alt + N para criar um banco com o nome scn_db
+
+Crie um arquivo .env na pasta raiz do projeto com a variável de ambiente :
+
+```
+DB_CONNECTION=mongodb://localhost/scn_db
+```
+
+Depois de instalar as dependências , criar a variável de ambiente e o banco inicie a api :
+
+```
+npm run dev
+```
+
+<b>OBS:</b> Verifique no terminal da api se apresenta a seguinte mensagem no console : connected to DB!
