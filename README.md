@@ -1,13 +1,13 @@
-<h1 align="center">Sticky Colorful Notes</h1>
+# Sticky Colorful Notes
 
-<img src="https://user-images.githubusercontent.com/85377319/176077277-04888a32-4d85-491a-a25b-e7337ca8499b.png" />
-<img src="https://user-images.githubusercontent.com/85377319/176085474-749656fa-cacb-409e-b299-3f0b477d5b46.png" />
+![Sticky Colorful Notes](https://user-images.githubusercontent.com/85377319/176077277-04888a32-4d85-491a-a25b-e7337ca8499b.png)
+![Sticky Colorful Notes](https://user-images.githubusercontent.com/85377319/176085474-749656fa-cacb-409e-b299-3f0b477d5b46.png)
 
-<h2>Instruções para rodar o projeto em sua máquina</h2>
+## Instruções para rodar o projeto em sua máquina
 
 Verifique se o `node.js v14+` está instalado.
 
-<h3>Front-end :</h3>
+### Front-end :
 
 Clone o repositório sticky-colorful-notes :
 
@@ -33,7 +33,7 @@ Logo após instalar as dependências inicie o projeto :
 npm start || yarn start
 ```
 
-<h3>Back-end :</h3>
+### Back-end :
 
 Clone o repositório scn-api :
 
@@ -57,7 +57,7 @@ https://nosqlbooster.com/downloads
 
 Crie uma conexão no NoSqlBooster :
 
-<img src="https://user-images.githubusercontent.com/85377319/176083757-0428970b-8216-46ce-8208-81fe9bcdeee5.png" />
+![NoSqlBooster](https://user-images.githubusercontent.com/85377319/176083757-0428970b-8216-46ce-8208-81fe9bcdeee5.png)
 
 Utilize o atalho Alt + N para criar um banco com o nome scn_db
 
@@ -73,4 +73,4 @@ Depois de instalar as dependências , criar a variável de ambiente e o banco in
 npm run dev
 ```
 
-<b>OBS:</b> Verifique no terminal da api se apresenta a seguinte mensagem no console : connected to DB!
+**OBS:** Verifique no terminal da api se apresenta a seguinte mensagem no console : `connected to DB!`
